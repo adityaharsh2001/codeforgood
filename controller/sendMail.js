@@ -26,7 +26,7 @@ module.exports.sendVerifyEmail = async (email, token) => {
   var url = "http://localhost:8000/user/verifyemail?token=" + token;
 
   await smtpTransport.sendMail({
-    from: "<your email>",
+    from: "partyshatiadi@gmail.com",
     to: email,
     subject: "VERIFY Your EMAIL",
     text: `Click on this link to verify ${url}`,

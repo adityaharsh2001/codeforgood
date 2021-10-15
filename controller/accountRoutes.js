@@ -22,9 +22,6 @@ router.get('/user/send-verification-email', checkAuth, async (req, res) => {
     // check if user is google or already verified
     if (req.user.isVerified || req.user.provider == 'google') {
         // already verified or google user
-        // since we won't show any such option in the UI 
-        // most probably this is being called by mistake or can be an attack
-        // simply redirect to profile 
         res.redirect('/profile');
     } else {
         // generate a token 
