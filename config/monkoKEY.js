@@ -1,1 +1,1 @@
-module.exports = "";
+module.exports = "mongodb+srv://GeekyAdi:geekyadi123@cluster0.kclup.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-2tu03s-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true";
