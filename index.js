@@ -8,7 +8,7 @@ const passport = require("passport");
 const flash = require("connect-flash");
 require("dotenv").config();
 const app = express();
-
+app.use(express.json()); // json format
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 
@@ -49,7 +49,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(require("./controller/routes.js"));
+app.use(require("./routes/routes.js"));
 
 const PORT = process.env.PORT || 8000;
 

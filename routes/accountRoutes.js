@@ -3,7 +3,7 @@ const router = express.Router();
 const crypto = require('crypto');
 const resetToken = require('../model/resetTokens');
 const user = require('../model/user');
-const mailer = require('./sendMail');
+const mailer = require('../controller/sendMail');
 const bcryptjs = require('bcryptjs');
 
 function checkAuth(req, res, next) {
