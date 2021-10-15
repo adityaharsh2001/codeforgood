@@ -3,8 +3,8 @@ const nodemailer = require("nodemailer");
 var smtpTransport = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "<your email>",
-    pass: "<password>",
+    user: "your_email",
+    pass: "your_secret",
   },
 });
 
@@ -13,7 +13,7 @@ module.exports.sendResetEmail = async (email, token) => {
   var url = "http://localhost:8000/user/reset-password?token=" + token;
 
   await smtpTransport.sendMail({
-    from: "<your email>",
+    from: "partyshatiadi@gmail.com",
     to: email,
     subject: "RESET YOUR PASSWORD",
     text: `Click on this link to reset your password ${url}`,
