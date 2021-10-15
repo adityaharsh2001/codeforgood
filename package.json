@@ -1,7 +1,7 @@
 {
   "name": "authentications",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repo contains code for Local email-passport authentication and Google Authentication.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index",
@@ -27,5 +27,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityaharsh2001/auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adityaharsh2001/auth/issues"
+  },
+  "homepage": "https://github.com/adityaharsh2001/auth#readme"
 }
