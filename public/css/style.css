@@ -1,13 +1,4 @@
-body {
-  font-size: 14px;
-  background: #ECF5B7;
-  font-family: sans-serif;
-  text-align: center;
-  -moz-transition: all .6s; 
-  -webkit-transition: all .6s;
-  -o-transition: all .6s;
-  transition: all .6s;
-}
+
 
 .border {
   border: 6px solid #9CB418;
@@ -34,16 +25,10 @@ body {
 }
 
 .container {
-  margin-top: -40px;
   width: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 10%;
   color: #7D9014;
   } 
 

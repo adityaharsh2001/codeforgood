@@ -6,7 +6,6 @@ const cookieParser = require("cookie-parser");
 const expressSession = require("express-session");
 var MemoryStore = require("memorystore")(expressSession);
 const passport = require("passport");
-const { ApolloServer } = require("apollo-server-express");
 require("dotenv").config();
 const app = express();
 app.use(express.json()); // json format
